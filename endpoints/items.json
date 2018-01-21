@@ -1,0 +1,65 @@
+[
+   {
+      "id":2,
+      "name":"Superman",
+      "alterEgo":"Clark Kent",
+      "likes":741,
+      "default":true
+   },
+   {
+      "id":3,
+      "name":"Batman",
+      "alterEgo":"Bruce Wayne",
+      "likes":744,
+      "default":true
+   },
+   {
+      "id":8,
+      "name":"Deadpool",
+      "alterEgo":"Wade Winston Wilson",
+      "likes":13909,
+      "default":true
+   },
+   {
+      "id":1,
+      "name":"Spiderman",
+      "alterEgo":"Peter Parker",
+      "likes":2077,
+      "default":true
+   },
+   {
+      "id":7,
+      "name":"Hulk",
+      "alterEgo":"Bruce Banner",
+      "likes":864,
+      "default":true
+   },
+   {
+      "id":6,
+      "name":"Capitan America",
+      "alterEgo":"Steven Grant Rogers",
+      "likes":1080,
+      "default":true
+   },
+   {
+      "id":5,
+      "name":"Iron man",
+      "alterEgo":"Tony Stark",
+      "likes":946,
+      "default":true
+   },
+   {
+      "id":4,
+      "name":"Wonder woman",
+      "alterEgo":"Diana Prince",
+      "likes":3778,
+      "default":true
+   },
+   {
+      "id":3263,
+      "name":"sdg",
+      "alterEgo":"sdgdfdfg",
+      "likes":0,
+      "default":false
+   }
+]

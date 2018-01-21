@@ -1,0 +1,38 @@
+<div id="left">
+    <h2 class="section-title">{{ 'heroesList' | translate }}</h2>
+    <div>
+        <mat-list>
+            <mat-list-item *ngFor="let hero of heroes">
+                <h3 mat-line [ngClass]="{'cp': hero.default}" (click)="seeHeroDetails(hero);"> {{hero.name}} </h3>
+                <p mat-line [ngClass]="{'cp': hero.default}" (click)="seeHeroDetails(hero);">
+                    <span>{{hero.alterEgo}}</span>
+                </p>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>
+<div id="right">
+    <h2 class="section-title">{{ 'createHero' | translate }}</h2>
+    <div>
+        <form [formGroup]="newHeroForm" #form="ngForm" (ngSubmit)="createNewHero(newHeroForm.value)">
+            <mat-input-container class="input-container">
+                <input matInput type="text"
+                       placeholder="{{'name' | translate}}"
+                       formControlName="name">
+            </mat-input-container>
+
+            <mat-input-container class="input-container">
+                <input matInput type="text"
+                       placeholder="{{'realName' | translate}}"
+                       formControlName="alterEgo">
+            </mat-input-container>
+
+            <button mat-raised-button type="submit" [disabled]="!newHeroForm.valid">
+                {{'create' | translate}}
+            </button>
+
+            <div *ngIf="error">{{error | translate}}</div>
+        </form>
+    </div>
+</div>
+<div class="clear"></div>
