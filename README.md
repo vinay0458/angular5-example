@@ -10,6 +10,9 @@
 ** install chrome extention called "200 ok!",
 	select the sample Json path
 	In advanced setting select the option "set CORS headers".
-	Give the json location in end points.
+	Give the json location in end points.**
+
+# Makesure
+** .angular-cli.json file is there in the setup--> its the starting of the application.**
 
 

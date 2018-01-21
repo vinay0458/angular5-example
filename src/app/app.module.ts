@@ -13,7 +13,6 @@ import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/h
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpLoaderFactory} from './app.translate.factory';
 import {HeroTopComponent} from './heroes/hero-top/hero-top.component';
-import {TimingInterceptor} from './shared/interceptors/timing.interceptor';
 
 @NgModule({
   imports: [
@@ -35,9 +34,7 @@ import {TimingInterceptor} from './shared/interceptors/timing.interceptor';
     HeroTopComponent
   ],
   providers: [
-    {provide: APP_CONFIG, useValue: AppConfig},
-    {provide: HTTP_INTERCEPTORS, useClass: TimingInterceptor, multi: true, deps: []},
-    {provide: HTTP_INTERCEPTORS, useClass: TimingInterceptor, multi: true}
+    {provide: APP_CONFIG, useValue: AppConfig}
   ],
   bootstrap: [AppComponent]
 })
